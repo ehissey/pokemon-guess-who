@@ -25,7 +25,7 @@ export default class Tile extends Component {
                 flipDirection="vertical"
             >
                 <div>
-                    <img className={"tile"} onClick={this.handleClick} src={this.props.imageSrc} alt={this.props.championName + " tile"}/>
+                    <img className={"tile"} height={120} width={120} onClick={this.handleClick} src={this.props.imageSrc} alt={this.props.championName + " tile"}/>
                     <div className={"tile-label"}>{this.props.championName}</div>
                 </div>
                 <div>
