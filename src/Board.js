@@ -4291,13 +4291,13 @@ class Board extends Component{
     }
 
     render() {
-        const getNewChampionButton = <button onClick={this.getRandomChampion}>GET A NEW CHAMPION</button>
+        const getNewChampionButton = <button onClick={this.getRandomChampion}>GET A NEW POKÉMON</button>
         const generateNewBoardButton = <button onClick={this.generateNewBoard}>GENERATE A NEW BOARD</button>
         const shareButton = <button onClick={this.shareThisBoard}>SHARE THIS BOARD</button>;
         return(
             <div className={"centered"}>
-                <h2>Your Champion</h2>
-                <h3>(click on any of the champion cards to flip it over)</h3>
+                <h2>Your Pokémon</h2>
+                <h3>(click on any of the Pokémon cards to flip it over)</h3>
                 <br/>
                 <div className={"my-tile"}>
                     <Tile 
@@ -4315,7 +4315,7 @@ class Board extends Component{
                     (
                     <div>
                         <br/>
-                        The site has randomly selected 36 League of Legends champions and populated a game board with it.<br/><br/>
+                        The site has randomly selected 36 Pokémon and populated a game board with it.<br/><br/>
                         To play with somebody else, click {shareButton} (or, copy the URL in your search bar) and paste the copied link to the person you want to play with.<br/><br/>
                         Once you and who you want to play with are on the same URL, play <a href="https://www.youtube.com/watch?v=a76UPzU2VXM">a normal game of Guess Who</a>.<br/><br/>
                         If you want to play a new round with the same board, have all players click {getNewChampionButton}.<br/><br/>
